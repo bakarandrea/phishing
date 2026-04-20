@@ -24,10 +24,23 @@ export default function App() {
     }
   }, []);
 
-  const addDetection = (result: DetectionResult) => {
+  const addDetection = async (result: DetectionResult) => {
     const newHistory = [result, ...history];
     setHistory(newHistory);
     localStorage.setItem('phishing_history', JSON.stringify(newHistory));
+
+    // Trigger Real-time Alert if it's a threat
+    if (!result.isSafe) {
+      try {
+        await fetch('/api/alerts', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ detection: result }),
+        });
+      } catch (error) {
+        console.error('Failed to trigger alert:', error);
+      }
+    }
   };
 
   const clearHistory = () => {
