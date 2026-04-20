@@ -1,5 +1,5 @@
 <div align="center">
-<img width="1200" height="475" alt="https://www.freepik.com/free-photo/scam-virus-spyware-malware-antivirus-concept_17198876.htm#fromView=keyword&page=1&position=0&uuid=80f2fd43-80fe-4752-9bf0-6d75c4188f19&query=Phishing+detection" />
+<img alt="https://www.freepik.com/free-photo/scam-virus-spyware-malware-antivirus-concept_17198876.htm#fromView=keyword&page=1&position=0&uuid=80f2fd43-80fe-4752-9bf0-6d75c4188f19&query=Phishing+detection" />
 </div>
 
 # Run and deploy your AI Studio app
